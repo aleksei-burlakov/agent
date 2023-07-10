@@ -12,7 +12,9 @@ func StandardGatherers() map[string]FactGatherer {
 	return map[string]FactGatherer{
 		CibAdminGathererName:        NewDefaultCibAdminGatherer(),
 		CorosyncCmapCtlGathererName: NewDefaultCorosyncCmapctlGatherer(),
+		BorosyncCmapCtlGathererName: NewDefaultBorosyncCmapctlGatherer(),
 		CorosyncConfGathererName:    NewDefaultCorosyncConfGatherer(),
+		DorosyncConfGathererName:    NewDefaultDorosyncConfGatherer(),
 		HostsFileGathererName:       NewDefaultHostsFileGatherer(),
 		SystemDGathererName:         NewDefaultSystemDGatherer(),
 		PackageVersionGathererName:  NewDefaultPackageVersionGatherer(),
